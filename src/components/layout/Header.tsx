@@ -14,20 +14,22 @@ import {
 const Header = () => {
 	return (
 		<div className='flex py-6  justify-between items-center'>
-			<Image src={logo} alt='logo' className='w-40' />
+			<Link href='/'>
+				<Image src={logo} alt='logo' className='w-40' />
+			</Link>
 			<div className='lg:block hidden'>
 				<ul className='flex gap-x-10'>
 					<li className='text-lg'>
-						<Link href={'/'}>Female</Link>
+						<Link href='/category/female'>Female</Link>
 					</li>
 					<li className='text-lg'>
-						<Link href={'/'}>Male</Link>
+						<Link href='/category/male'>Male</Link>
 					</li>
 					<li className='text-lg'>
-						<Link href={'/'}>Kids</Link>
+						<Link href='/category/kids'>Kids</Link>
 					</li>
 					<li className='text-lg'>
-						<Link href={'/'}>All Products</Link>
+						<Link href='/products'>All Products</Link>
 					</li>
 				</ul>
 			</div>
@@ -65,16 +67,16 @@ const Header = () => {
 							</div>
 							<ul className=' text-center flex flex-col gap-y-4 scroll-m-20 font-semibold tracking-tight  '>
 								<li>
-									<Link href={'/'}>Female</Link>
+									<Link href='/category/female'>Female</Link>
 								</li>
 								<li>
-									<Link href={'/'}>Male</Link>
+									<Link href='/category/male'>Male</Link>
 								</li>
 								<li>
-									<Link href={'/'}>Kids</Link>
+									<Link href='/category/kids'>Kids</Link>
 								</li>
 								<li>
-									<Link href={'/'}>All Products</Link>
+									<Link href='/products'>All Products</Link>
 								</li>
 							</ul>
 							<div className='h-12 w-12 rounded-full bg-gray-300 flex justify-center items-center'>
