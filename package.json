@@ -11,6 +11,7 @@
   "dependencies": {
     "@radix-ui/react-popover": "^1.0.6",
     "@radix-ui/react-slot": "^1.0.2",
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -24,7 +25,9 @@
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
     "react-silk": "^0.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",

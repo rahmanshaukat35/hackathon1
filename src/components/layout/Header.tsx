@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import logo from '../../../public/logo.webp';
 import Image from 'next/image';
@@ -5,6 +6,8 @@ import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
 import { Search } from 'lucide-react';
 import { Menu } from 'lucide-react';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
 import {
 	Popover,
 	PopoverContent,
@@ -12,6 +15,9 @@ import {
 } from '@/components/ui/popover';
 
 const Header = () => {
+	const cartValue = useSelector(
+		(state: RootState) => state.cartSlice.totalQuantity
+	);
 	return (
 		<div className='flex py-6  justify-between items-center'>
 			<Link href='/'>
@@ -44,9 +50,9 @@ const Header = () => {
 				</div>
 			</div>
 			<div className='lg:block hidden'>
-				<div className='h-12 w-12 rounded-full bg-gray-300 flex justify-center items-center'>
-					<span className='bg-yellow-300 rounded-full absolute w-4 h-4 top-7 text-sm flex justify-center items-center'>
-						10
+				<div className='h-12 w-12 rounded-full bg-gray-300 flex justify-center items-center relative'>
+					<span className='bg-pink-200 rounded-full absolute w-5 h-5 top-0 right-2 text-sm flex justify-center items-center'>
+						{cartValue}
 					</span>
 					<ShoppingCart size={20} />
 				</div>
@@ -81,7 +87,7 @@ const Header = () => {
 							</ul>
 							<div className='h-12 w-12 rounded-full bg-gray-300 flex justify-center items-center'>
 								<span className='bg-yellow-300 rounded-full absolute w-4 h-4 bottom-12 text-sm flex justify-center items-center'>
-									10
+									{cartValue}
 								</span>
 								<ShoppingCart size={20} />
 							</div>

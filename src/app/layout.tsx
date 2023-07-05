@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import './globals.css';
 import { Inter } from 'next/font/google';
+import Providers from '@/components/Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,11 +17,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
-				<div className='w-[80%] m-auto'>
+			<body className={`w-[80%] m-auto ${inter.className}`}>
+				<Providers>
 					<Header />
 					{children}
-				</div>
+				</Providers>
 			</body>
 		</html>
 	);
