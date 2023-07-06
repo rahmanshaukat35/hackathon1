@@ -8,6 +8,7 @@ import feature3 from '../../public/Featured3.webp';
 import feature4 from '../../public/Featured4.webp';
 import Image from 'next/image';
 import { ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
 const Hero = () => {
 	return (
 		<section className='flex flex-col md:flex-row mt-12'>
@@ -27,10 +28,12 @@ const Hero = () => {
 						{''} wear Dine outfit.
 					</p>
 				</div>
-				<Button className='bg-black h-12 px-8'>
-					<ShoppingCart className='mr-2' />
-					Start Shopping
-				</Button>
+				<Link href='/products'>
+					<Button className='bg-black h-12 px-8'>
+						<ShoppingCart className='mr-2' />
+						Start Shopping
+					</Button>
+				</Link>
 				<div className='flex lg:gap-x-12 md:gap-x-6 '>
 					<Image src={feature1} alt='feature1' className='lg:block hidden' />
 					<Image src={feature2} alt='feature2' className='lg:block hidden' />
