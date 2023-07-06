@@ -5,6 +5,8 @@ import AddToCart from '@/components/AddToCart';
 import { MinusCircle, PlusCircle } from 'lucide-react';
 import MinusPlus from '@/components/MinusPlus';
 import CheckOut from '@/components/CheckOut';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 const getProductsDetail = (id: string) => {
 	return products.filter((product) => product.id == id);
 };
@@ -55,7 +57,9 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
 									${product.price.toFixed(2)}
 								</p>
 							</div>
-							<CheckOut />
+							<Link href='/checkout'>
+								<Button>Go to Checkout</Button>
+							</Link>
 						</div>
 					</div>
 				))}

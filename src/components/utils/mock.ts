@@ -8,6 +8,7 @@ export const products: Product[] = [
 		tagline: 'Dress',
 		category: 'female',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '2',
@@ -17,6 +18,7 @@ export const products: Product[] = [
 		price: 60.9,
 		category: 'male',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '3',
@@ -26,6 +28,7 @@ export const products: Product[] = [
 		price: 70.98,
 		category: 'female',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '4',
@@ -35,11 +38,13 @@ export const products: Product[] = [
 		price: 80,
 		category: 'male',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '5',
 		name: 'Product 5',
 		tagline: 'Dress',
+		quantity: 10,
 
 		price: 40.98,
 		category: 'kids',
@@ -53,6 +58,7 @@ export const products: Product[] = [
 		price: 30.98,
 		category: 'kids',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '7',
@@ -62,6 +68,7 @@ export const products: Product[] = [
 		price: 30.98,
 		category: 'kids',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '8',
@@ -71,6 +78,7 @@ export const products: Product[] = [
 		price: 30.98,
 		category: 'female',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '9',
@@ -80,6 +88,7 @@ export const products: Product[] = [
 		price: 30.98,
 		category: 'male',
 		image: image1,
+		quantity: 10,
 	},
 	{
 		id: '10',
@@ -89,5 +98,6 @@ export const products: Product[] = [
 		price: 30.98,
 		category: 'kids',
 		image: image1,
+		quantity: 10,
 	},
 ];
