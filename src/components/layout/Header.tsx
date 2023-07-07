@@ -19,7 +19,7 @@ const Header = () => {
 		(state: RootState) => state.cartSlice.totalQuantity
 	);
 	return (
-		<div className='flex py-6  justify-between items-center'>
+		<div className='flex py-6  justify-between items-center sticky'>
 			<Link href='/'>
 				<Image src={logo} alt='logo' className='w-40' />
 			</Link>

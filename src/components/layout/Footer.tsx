@@ -7,14 +7,13 @@ import Link from 'next/link';
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<section className='px-12'>
-			<div className='flex justify-between mt-12'>
-				<div className='flex flex-col gap-y-12 w-[30%]'>
+		<section className='px-12 '>
+			<div className='flex md:flex-row flex-col md:justify-between gap-y-10 md:gap-y-0 mt-12'>
+				<div className='flex flex-col gap-y-12 md:w-[30%]'>
 					<Link href='/'>
-						{' '}
-						<Image src={logo} alt='logo' sizes='25' />
+						<Image src={logo} alt='logo' sizes='25' className='w-[150px] h-6' />
 					</Link>
-					<p className='text-sm text-black/70'>
+					<p className='md:text-sm text-base text-black/70'>
 						Small, artisan label that offers a thoughtfully curated collection
 						of high quality everyday essentials made.
 					</p>
@@ -51,13 +50,13 @@ const Footer = () => {
 				</div>
 			</div>
 			<hr className='w-full bg-black h-0.5 mt-12' />
-			<div className='flex justify-between py-8 text-base text-black/60'>
+			<div className='flex justify-between py-8 md:text-base text-sm text-black/60'>
 				<p>Copyright © {year} Dine Market</p>
 				<p>
 					Design by :
 					<span className='font-semibold text-black'>Rahman Shaukat Butt</span>
 				</p>
-				<p>
+				<p className='lg:block hidden'>
 					Code By :<span className='font-semibold text-black'>github.com</span>
 				</p>
 			</div>
