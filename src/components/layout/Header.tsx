@@ -26,13 +26,13 @@ const Header = () => {
 			<div className='lg:block hidden'>
 				<ul className='flex gap-x-10'>
 					<li className='text-lg'>
-						<Link href='/category/female'>Female</Link>
+						<Link href='/female/female'>Female</Link>
 					</li>
 					<li className='text-lg'>
-						<Link href='/category/male'>Male</Link>
+						<Link href='/male/male'>Male</Link>
 					</li>
 					<li className='text-lg'>
-						<Link href='/category/kids'>Kids</Link>
+						<Link href='/kid'>Kids</Link>
 					</li>
 					<li className='text-lg'>
 						<Link href='/products'>All Products</Link>

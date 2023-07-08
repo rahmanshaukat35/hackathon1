@@ -16,7 +16,7 @@ const nextConfig = {
 			},
 			{
 				protocol: 'https',
-				hostname: 'abdulbasit-self.vercel.app',
+				hostname: 'hackathon1piaic.vercel.app/',
 				port: '',
 				pathname: '/**',
 			},

@@ -43,7 +43,7 @@ const ProductList: FC<{ ProductData: Array<oneProductType> }> = ({
 		isDragging = true;
 		initialX = e.touches[0].clientX;
 	}
-	let dataToItrate = ProductData.slice(0, 3);
+	let dataToItrate = ProductData.slice(1, 4);
 
 	return (
 		<div className='space-y-8 my-8 '>
@@ -56,7 +56,7 @@ const ProductList: FC<{ ProductData: Array<oneProductType> }> = ({
 				onMouseMove={mouseMoves}
 				onMouseDown={mouseDown}
 				onMouseUp={mouseUp}
-				className='select-none flex lg:flex-row flex-col space-y-4 gap-8 overflow-x-hidden scrollGrab py-4 overflow-y-hidden justify-center items-center'
+				className=' flex lg:flex-row flex-col space-y-4 gap-8   py-4  justify-center items-center'
 				onTouchMove={mouseMovesForMobile}
 				onTouchStart={mouseDownForMobile}
 				onTouchEnd={mouseUp}

@@ -22,7 +22,7 @@ export interface oneProductType {
 	_type: string;
 	productName: string;
 	_createdAt: string;
-	_id: string;
+	_id: any;
 	_updatedAt: string;
 	image: Array<imagesType>;
 	description: any;
@@ -32,5 +32,8 @@ export interface oneProductType {
 }
 
 export interface responseType {
+	map(
+		arg0: (product: any) => import('react').JSX.Element
+	): import('react').ReactNode;
 	result: Array<oneProductType>;
 }
